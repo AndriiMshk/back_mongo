@@ -10,6 +10,7 @@ const DB_URL = 'mongodb+srv://andr:andrey031444@cluster.4l8v2r8.mongodb.net/?ret
 const app = express()
 
 app.use(express.json())
+app.use(express.static('static'))
 app.use(fileUpload({}))
 app.use('/', router)
 
